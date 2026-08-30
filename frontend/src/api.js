@@ -28,7 +28,7 @@ export function seedData() {
 
 /** POST /api/reset — delete all data and re-seed */
 export function resetDemoData() {
-  return apiFetch("/api/reset", { method: "POST" });
+  return apiFetch("/api/seed", { method: "POST" });
 }
 
 /** GET /api/customers */
