@@ -51,5 +51,11 @@ app.include_router(metrics.router)
 # ── Seed endpoint ───────────────────────────────────────────────────────────
 @app.post("/api/seed", tags=["seed"])
 def seed_data(db: Session = Depends(get_db)):
-    """Seed the database with 10 demo customers and realistic history."""
+    """Delete all demo data and re-seed the database."""
+    from app.models import Customer, PaymentMethod, Payment, CustomerMethodHistory
+    db.query(Payment).delete()
+    db.query(CustomerMethodHistory).delete()
+    db.query(PaymentMethod).delete()
+    db.query(Customer).delete()
+    db.commit()
     return seed_database(db)
