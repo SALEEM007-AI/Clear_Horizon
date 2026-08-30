@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://clear-horizon-lyqj.onrender.com";
 
 /**
  * Fetch helper — prepends the backend base URL and returns parsed JSON.
