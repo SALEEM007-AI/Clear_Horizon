@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI-powered failed-payment recovery agent for Razorpay Buildathon Track 3" />
+    <title>Smart Recovery Agent</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: '#f7f9fb',
+              surface: '#f7f9fb',
+              'surface-pure': '#ffffff',
+              'surface-container': '#ffffff',
+              'surface-container-low': '#f2f4f6',
+              'surface-container-high': '#e6e8ea',
+              'border-subtle': '#E2E8F0',
+              primary: '#004ac6',
+              secondary: '#505f76',
+              accent: '#8b5cf6',
+              'primary-fixed': '#dbe1ff',
+              'secondary-container': '#d0e1fb',
+              emerald: {
+                400: '#10b981',
+                500: '#059669',
+              },
+              amber: {
+                400: '#d97706',
+                500: '#b45309',
+              },
+              rose: {
+                400: '#ba1a1a',
+                500: '#93000a',
+              }
+            },
+            borderRadius: {
+              lg: '12px',
+              xl: '16px',
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#f7f9fb] text-[#0F172A] font-sans antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

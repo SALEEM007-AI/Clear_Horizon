@@ -1,0 +1,4 @@
+backend/.env
+backend/*.db-shm
+backend/*.db-wal
+backend/*.db

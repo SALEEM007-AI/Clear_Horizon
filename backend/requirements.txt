@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+python-dotenv
+pydantic
+pydantic-settings
+anthropic
+httpx
+razorpay
+aiosqlite
